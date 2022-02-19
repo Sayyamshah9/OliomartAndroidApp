@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Oliomart</string>
+    <string name="rsignup">Signup</string>
+    <string name="create_account">Create Account</string>
+    <string name="rlogin">Login</string>
+    <string name="arrow_image">ArrowImage</string>
+    <string name="first_name">First-name</string>
+    <string name="last_name">Last-name</string>
+    <string name="gender">Gender</string>
+    <string name="phone_no">Phone no</string>
+    <string name="email_id">Email Id</string>
+    <string name="rpassword">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="enter_your_credentials">Enter Your Credentials</string>
+    <string name="lsignup">Signup</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="llogin">Login</string>
+    <string name="arrowImage">ArrowImage</string>
+</resources>

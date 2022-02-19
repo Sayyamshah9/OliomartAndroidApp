@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender" >
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="states" >
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Karnataka</item>
+        <item>Maharashtra</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+    </string-array>
+
+    <string-array name="delhi_cities" >
+        <item>Siri</item>
+        <item>Tughlqabad</item>
+        <item>Firozobad</item>
+        <item>Shahjahanabad</item>
+        <item>New Delhi</item>
+    </string-array>
+
+    <string-array name="goa_cities" >
+        <item>Panaji</item>
+        <item>Margao</item>
+        <item>Morgugoa</item>
+        <item>Mapusa</item>
+        <item>Ponda</item>
+    </string-array>
+
+    <string-array name="gujarat_city" >
+        <item>Ahemdabad</item>
+        <item>Surat</item>
+        <item>Rajkot</item>
+        <item>Gandhinagar</item>
+        <item>Jamnagar</item>
+    </string-array>
+
+    <string-array name="haryana_cities" >
+        <item>Gurugram</item>
+        <item>Panipat</item>
+        <item>Gurgaon</item>
+        <item>Ambala</item>
+        <item>Sonipat</item>
+    </string-array>
+
+    <string-array name="himachal_cities" >
+        <item>Shimla</item>
+        <item>Solan</item>
+        <item>Manali</item>
+        <item>Kullu</item>
+        <item>Una</item>
+    </string-array>
+
+    <string-array name="karnataka_cities" >
+        <item>Bengaluru</item>
+        <item>Shivamogga</item>
+        <item>Ballari</item>
+        <item>Mangaluru</item>
+        <item>Mysuru</item>
+    </string-array>
+
+    <string-array name="maharashtra_cities" >
+        <item>Nashik</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Kolhapur</item>
+        <item>Dhule</item>
+    </string-array>
+
+    <string-array name="punjab_cities" >
+        <item>Amritsar</item>
+        <item>Ludhiana</item>
+        <item>Patiala</item>
+        <item>Bathinda</item>
+        <item>Jalandhar</item>
+    </string-array>
+
+    <string-array name="rajasthan_cities" >
+        <item>Jaipur</item>
+        <item>Jodhpur</item>
+        <item>Udaipur</item>
+        <item>Bikaner</item>
+        <item>Bhilwara</item>
+    </string-array>
+
+</resources>

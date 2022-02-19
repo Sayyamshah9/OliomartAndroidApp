@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".EmailVerification">
+
+    <TextView
+        android:id="@+id/emailverification_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/lato"
+        android:text="Email Verification"
+        android:textColor="@color/yellow"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/receiveEmail_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/noto_sans"
+        android:text="You will receive OTP on - "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailverification_textview" />
+
+    <TextView
+        android:id="@+id/emailFromPreviousActivity_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/noto_sans_italic"
+        android:text="usermail@gmail.com"
+        android:textColor="@color/yellow"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receiveEmail_txtview" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otp_textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:hint="OTP"
+        android:textColorHint="#808080"
+        app:boxStrokeColor="@color/yellow"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/yellow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailFromPreviousActivity_txtview">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otpeditTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/sixDigitCode_txtview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/noto_sans"
+        android:text="If you have not received the 6-digit code in"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otp_textInputLayout" />
+
+    <TextView
+        android:id="@+id/otpCounter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/noto_sans"
+        android:text="1:30"
+        android:textColor="@color/yellow"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/sixDigitCode_txtview"
+        app:layout_constraintTop_toBottomOf="@+id/otp_textInputLayout" />
+
+    <TextView
+        android:id="@+id/clickOnSend_txtview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/noto_sans"
+        android:text="then click on"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sixDigitCode_txtview" />
+
+    <TextView
+        android:id="@+id/resendTextBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="Resend"
+        android:textColor="@color/yellow"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/clickOnSend_txtview"
+        app:layout_constraintTop_toBottomOf="@+id/otpCounter" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/address_textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Address"
+        android:textColorHint="#808080"
+        app:boxStrokeColor="@color/yellow"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/yellow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clickOnSend_txtview"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="textPostalAddress"
+            android:maxLines="3"
+            android:maxLength="30"
+            android:textColor="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/stateDropdown_textLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundColor="@color/blue"
+        app:boxStrokeColor="@color/yellow"
+        app:endIconTint="@color/yellow"
+        app:errorEnabled="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_textInputLayout"
+        android:visibility="gone">
+
+        <AutoCompleteTextView
+            android:id="@+id/state_dropdown_editTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="none"
+            android:text="State"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="LabelFor"
+            android:dropDownHeight="200dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cityDropdown_textLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:boxBackgroundColor="@color/blue"
+        app:boxStrokeColor="@color/yellow"
+        app:endIconTint="@color/yellow"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/pincode_textInputLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stateDropdown_textLayout"
+        android:visibility="gone">
+
+        <AutoCompleteTextView
+            android:id="@+id/city_dropdown_editTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="none"
+            android:text="City"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="LabelFor"
+            android:dropDownHeight="150dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pincode_textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Pincode"
+        android:textColorHint="#808080"
+        app:boxStrokeColor="@color/yellow"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cityDropdown_textLayout"
+        app:layout_constraintTop_toBottomOf="@+id/stateDropdown_textLayout"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/yellow"
+            android:fontFamily="@font/noto_sans"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cityDropdown_textLayout"
+            app:rippleColor="@color/black"
+            android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
