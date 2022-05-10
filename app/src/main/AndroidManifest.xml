@@ -10,8 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.Oliomart">
+        android:theme="@style/Theme.Oliomart"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".OnClickProductActivity"
+            android:exported="false" />
         <activity
             android:name=".EmailVerification"
             android:exported="false" />

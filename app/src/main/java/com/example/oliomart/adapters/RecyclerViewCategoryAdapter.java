@@ -31,12 +31,12 @@ public class RecyclerViewCategoryAdapter extends RecyclerView.Adapter<CategoryVi
 
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
-        holder.categoryName.setText(stringCategory[position]);
-        holder.categoryImage.setImageResource(categoryImages[position]);
+        holder.categoryName.setText(stringCategory[holder.getAdapterPosition()]);
+        holder.categoryImage.setImageResource(categoryImages[holder.getAdapterPosition()]);
         holder.category_itemLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, stringCategory[position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, stringCategory[holder.getAdapterPosition()], Toast.LENGTH_SHORT).show();
             }
         });
     }

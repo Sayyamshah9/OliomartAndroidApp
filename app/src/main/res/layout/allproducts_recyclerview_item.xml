@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_containerId"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="9dp"
+    android:layout_marginBottom="9dp"
     android:orientation="horizontal"
-    android:background="@color/black"
+    android:background="@drawable/rectangle_background"
     android:padding="12dp">
 
         <ImageView
             android:id="@+id/product_image_id"
             android:layout_width="88dp"
-            android:layout_height="104dp"
+            android:layout_height="110dp"
             android:src="@drawable/trial"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
             android:background="@drawable/product_img_shape"/>
 
     <androidx.appcompat.widget.LinearLayoutCompat

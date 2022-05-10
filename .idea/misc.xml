@@ -5,13 +5,21 @@
       <map>
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/drawable/product_img_shape.xml" value="0.181" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/drawable/rectangle_background.xml" value="0.1715" />
+        <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/activity_account.xml" value="0.24166666666666667" />
+        <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/activity_accounts_tab.xml" value="0.24166666666666667" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/activity_email_verification.xml" value="0.25" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/activity_on_click_product.xml" value="0.24166666666666667" />
+        <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/activity_product_details.xml" value="0.24166666666666667" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/activity_regristration.xml" value="0.24166666666666667" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/activity_splash_screen.xml" value="0.24166666666666667" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/allproducts_recyclerview_item.xml" value="0.24166666666666667" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/dropdownelement.xml" value="0.24166666666666667" />
+        <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/fragment_account.xml" value="0.24166666666666667" />
+        <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/fragment_cart.xml" value="0.24166666666666667" />
+        <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/fragment_home.xml" value="0.24166666666666667" />
+        <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/fragment_orders.xml" value="0.24166666666666667" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/genderdropdownelement.xml" value="0.24166666666666667" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/layout/listview_category.xml" value="0.24166666666666667" />
         <entry key="..\:/Work Folder/BE/oliomart/Project/oliomartapp/app/src/main/res/menu/bottom_navs.xml" value="0.24166666666666667" />

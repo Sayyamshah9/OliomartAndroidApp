@@ -1,6 +1,7 @@
 package com.example.oliomart.requests;
 
 import android.content.Context;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,7 +38,7 @@ public class GetProducts {
     //GETTING PRODUCT DATA METHOD
     public void getProductsData(String authToken, RecyclerView recyclerView){
 
-        ProductModalClass productModalClass = new ProductModalClass();
+//        ProductModalClass productModalClass = new ProductModalClass();
         Call<List<ProductModalClass>> productDataCall = requestsInterface.getProducts(authToken);
 
         productDataCall.enqueue(new Callback<List<ProductModalClass>>() {
@@ -50,13 +51,12 @@ public class GetProducts {
                     recyclerView.setLayoutManager(new LinearLayoutManager(context));
                     RecyclerViewProductAdapter recyclerViewProductAdapter = new RecyclerViewProductAdapter(context, productData);
                     recyclerView.setAdapter(recyclerViewProductAdapter);
-
                 }
             }
 
             @Override
             public void onFailure(Call<List<ProductModalClass>> call, Throwable t) {
-
+                Toast.makeText(context, "Error Message: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

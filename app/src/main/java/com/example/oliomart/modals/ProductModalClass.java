@@ -1,5 +1,7 @@
 package com.example.oliomart.modals;
 
+import java.util.ArrayList;
+
 public class ProductModalClass {
 
     String pname;
@@ -7,7 +9,15 @@ public class ProductModalClass {
     String pcategory;
     String psubcategory;
     String price;
-    String[] images;
+    ArrayList<String> pimages = new ArrayList<>();
+
+    public ArrayList<String> getPimages() {
+        return pimages;
+    }
+
+    public void setPimages(ArrayList<String> pimages) {
+        this.pimages = pimages;
+    }
 
     public String getProductName() {
         return pname;
@@ -49,11 +59,4 @@ public class ProductModalClass {
         this.price = price;
     }
 
-    public String[] getImages() {
-        return images;
-    }
-
-    public void setImages(String[] images) {
-        this.images = images;
-    }
 }
