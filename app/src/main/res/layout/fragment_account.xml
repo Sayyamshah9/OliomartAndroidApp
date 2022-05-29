@@ -72,72 +72,44 @@
         android:textColor="@color/white"
         android:text="Address Line 1 - (Home)" />
 
-    <TextView
-        android:id="@+id/address2"
-        android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Details"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="250dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Password"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="300dp"/>
+
+    <Button
+        android:id="@+id/Logout_Btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
-        android:layout_marginLeft="33dp"
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        android:text="Address Line 2 - (Work)" />
-
-    <TextView
-        android:id="@+id/about_us"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="580dp"
-        android:layout_marginLeft="160dp"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:text="About Us" />
-
-    <TextView
-        android:id="@+id/contact_us"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="155dp"
-        android:layout_marginTop="625dp"
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        android:text="Contact Us" />
-
-    <TextView
-        android:id="@+id/terms_cond"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="670dp"
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        android:text="Terms and Condition" />
-
-    <ImageButton
-        android:id="@+id/edit_button"
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="360dp"
-        android:background="@color/blue"
-        android:src="@drawable/edit_button1" />
-
-    <ImageButton
-        android:id="@+id/reset_button"
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="360dp"
-        android:background="@color/blue"
-        android:src="@drawable/reset_button" />
-
-    <ImageButton
-        android:id="@+id/logout_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/blue"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="430dp"
-        android:src="@drawable/logout_button" />
-
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:rippleColor="@color/black" />
 
 </FrameLayout>
