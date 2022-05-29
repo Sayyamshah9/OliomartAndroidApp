@@ -2,8 +2,6 @@ package com.example.oliomart.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.oliomart.OnClickProductActivity;
 import com.example.oliomart.R;
-import com.example.oliomart.config.CommonMethods;
 import com.example.oliomart.modals.ProductModalClass;
-import com.squareup.picasso.Picasso;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -27,7 +23,7 @@ public class RecyclerViewProductAdapter extends RecyclerView.Adapter<ProductView
     Context context;
     List<ProductModalClass> productList;
     ArrayList<String> productImages = new ArrayList<>();
-    String thumbNailImage;
+    String thumbNailImage, ProductPriceStr;
 
     public RecyclerViewProductAdapter(Context context, List<ProductModalClass> productList) {
         this.context = context;
@@ -42,9 +38,10 @@ public class RecyclerViewProductAdapter extends RecyclerView.Adapter<ProductView
 
     @Override
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
+        ProductPriceStr = "₹ " + productList.get(holder.getAdapterPosition()).getPrice() + " /-";
         holder.productName.setText(productList.get(holder.getAdapterPosition()).getProductName());
         holder.productSubCategory.setText(productList.get(holder.getAdapterPosition()).getSubCategory());
-        holder.productPrice.setText(productList.get(holder.getAdapterPosition()).getPrice());
+        holder.productPrice.setText(ProductPriceStr);
 
 //        LOADING IMAGES TO IMAGEVIEW CODE
 //        productImages = productList.get(holder.getAdapterPosition()).getPimages();
@@ -59,13 +56,15 @@ public class RecyclerViewProductAdapter extends RecyclerView.Adapter<ProductView
             @Override
             public void onClick(View view) {
 
+//                Toast.makeText(context, productList.get(holder.getAdapterPosition()).getDescription(), Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(context, OnClickProductActivity.class);
-//                Bundle args = new Bundle();
-//                args.putSerializable("productDetailsBundle", (Serializable) holder.getAdapterPosition());
-                i.putExtra("ProductDetails", holder.getAdapterPosition());
+                i.putExtra("ProductNameDetail", productList.get(holder.getAdapterPosition()).getProductName());
+//                i.putExtra("ProductDescriptionDetail", productList.get(holder.getAdapterPosition()).getDescription());
+                i.putExtra("ProductPriceDetail", productList.get(holder.getAdapterPosition()).getPrice());
+                i.putExtra("ProductCatDetail", productList.get(holder.getAdapterPosition()).getCategory());
+                i.putExtra("ProductSubCatDetail", productList.get(holder.getAdapterPosition()).getSubCategory());
+                i.putExtra("ProductImgDetail", productList.get(holder.getAdapterPosition()).getPimages());
                 context.startActivity(i);
-
-//                i.putStringArrayListExtra("productDetails", holder.getAdapterPosition());
             }
         });
     }
