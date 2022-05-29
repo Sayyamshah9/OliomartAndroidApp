@@ -144,6 +144,7 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18sp"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputTextPassword"
